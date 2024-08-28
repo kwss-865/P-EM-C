@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() 
-{   int codigo, quanidade;
+{   int codigo, quantidade;
     float preco, total = 0;
     
     printf("Bem-vindo!");
