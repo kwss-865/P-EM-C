@@ -2,24 +2,25 @@
 #include <stdio.h>
 
 int main() 
-{   int codigo, quantidade;
+{   
+    int codigo, quantidade; 
     float preco, total = 0;
     
-    printf("Bem-vindo!");
-    printf("digite o código do produto (0 para finalizar): ");
+    printf("Bem-vindo!\n");
+    printf("Digite o código do produto (0 para finalizar): ");
     scanf("%d", &codigo);
     
     while (codigo != 0) {
-        printf("digite o preço do produto:");
+        printf("Digite o preço do produto: ");
         scanf("%f", &preco);
-        printf("Digite a quantidade de produto");
+        printf("Digite a quantidade do produto: ");
         scanf("%d", &quantidade);
         
-        total += preço * quantidade;
-        printf("digite o código do próximo produto (digite 0 para finalizar): ");
+        total += preco * quantidade;  
+        printf("Digite o código do próximo produto (digite 0 para finalizar): ");
         scanf("%d", &codigo);
     }
-    printf("Total de comparar: R$%2.f\n", total);
+    printf("Total a pagar: R$ %.2f\n", total); 
     
     return 0;
 }
